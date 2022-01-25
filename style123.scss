@@ -1,0 +1,79 @@
+$main_color: #226641;
+$main_border: 0px solid black;
+$ipad: 768px;
+
+@import "slide";
+@import "product";
+@import "history";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// 導覽列
+nav {
+    width: 100%;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    opacity: 0.9;
+    @media screen and (max-width: $ipad) {
+    }
+    .logo {
+        width: 20%;
+        padding-left: 20px;
+        border: $main_border;
+        @media screen and (max-width: $ipad) {
+            width: 20%;
+        }
+    }
+    .logo_data {
+        width: 70%;
+        border: $main_border;
+        a {
+            color: $main_color;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: 0.5s;
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+    .contact {
+        width: 10%;
+        // padding-right: 60px;
+        border: $main_border;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+// footer
+footer {
+    width: 100%;
+    // height: 100px;
+    background: #eee;
+    text-align: center;
+    padding: 50px;
+    a {
+        text-decoration: none;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    .about_me {
+        color: $main_color;
+        margin: 20px 0;
+    }
+    .copy {
+        font-size: 14px;
+        color: #aaa;
+    }
+}
