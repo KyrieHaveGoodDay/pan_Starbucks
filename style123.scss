@@ -1,6 +1,8 @@
 $main_color: #226641;
 $main_border: 0px solid black;
 $ipad: 768px;
+$phone_plus: 414px;
+$phone: 375px;
 
 @import "slide";
 @import "product";
@@ -61,6 +63,10 @@ footer {
     background: #eee;
     text-align: center;
     padding: 50px;
+    @media screen and (max-width: $ipad) {
+        padding: 0;
+    }
+
     a {
         text-decoration: none;
     }
@@ -75,5 +81,12 @@ footer {
     .copy {
         font-size: 14px;
         color: #aaa;
+    }
+}
+
+.off768 {
+    display: none;
+    @media screen and (max-width: $ipad) {
+        display: block;
     }
 }

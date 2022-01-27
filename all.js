@@ -1,8 +1,13 @@
 
 $('#slide').slick({
-    autoplay:true,
+    autoplay: true,
+    arrows: false,
 });
 console.log('123');
+
+
+
+
 
 // // jquery
 // $('#box').click(function () { });
