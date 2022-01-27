@@ -64,6 +64,7 @@
 .newData {
   width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,6 +79,7 @@
   display: flex;
   grid-gap: 30px;
   margin: 15px 0;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -117,6 +119,7 @@
 
 .dataBox .box_right {
   width: 65%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -130,6 +133,7 @@
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 
 .dataBox .order_left {
@@ -291,7 +295,6 @@ footer {
   width: 100%;
   background: #eee;
   text-align: center;
-  padding: 50px;
 }
 
 @media screen and (max-width: 768px) {

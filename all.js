@@ -1,9 +1,12 @@
+AOS.init();
 
 $('#slide').slick({
     autoplay: true,
     arrows: false,
 });
 console.log('123');
+
+
 
 
 
